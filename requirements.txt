@@ -1,0 +1,7 @@
+silero-vad
+torchcodec
+torch==2.9
+pydub
+python-dotenv
+openai
+piper_tts

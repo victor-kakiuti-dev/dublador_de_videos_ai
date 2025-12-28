@@ -1,0 +1,86 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ======================
+# Virtual environments
+# ======================
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ======================
+# Jupyter / Data Science
+# ======================
+.ipynb_checkpoints/
+*.ipynb
+!.ipynb_checkpoints/
+
+# ======================
+# Logs & outputs
+# ======================
+*.log
+logs/
+output/
+outputs/
+results/
+
+# ======================
+# Model artifacts
+# ======================
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ======================
+# Data files
+# (normalmente não versionar dados brutos)
+# ======================
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+
+# ======================
+# Experiment tracking
+# ======================
+mlruns/
+mlartifacts/
+
+# ======================
+# DVC
+# ======================
+.dvc/cache
+.dvc/tmp
+
+# ======================
+# OS / Editor
+# ======================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ======================
+# Build / Distribution
+# ======================
+build/
+dist/
+*.egg-info/
+
+# ======================
+# Secrets
+# ======================
+.env.local
+.env.production
+.env.development
+*.key
+*.pem
