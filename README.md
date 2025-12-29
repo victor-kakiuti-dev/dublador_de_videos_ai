@@ -35,8 +35,15 @@ Com o ambiente ativado, instale as dependências do projeto:
 ```bash
 pip install -r requirements.txt
 ```
+### 3. Criar .env
+Crie um arquivo .env na raiz no projeto e insira a chave api da OpenAi
 
-### 3. Executar o pipeline
+```
+OPENAI_API_KEY= sua_chave_api_aqui
+```
+
+
+### 4. Executar o pipeline
 
 O projeto é executado via terminal, utilizando o módulo principal do pipeline.
 
