@@ -6,6 +6,9 @@ import json
 
 # 1️⃣ Ler
 def pre_process(output_json):
+    
+    output_json.mkdir(parents=True, exist_ok=True)
+
     with open(output_json, 'r', encoding='utf-8') as f:
         segments = json.load(f)
 

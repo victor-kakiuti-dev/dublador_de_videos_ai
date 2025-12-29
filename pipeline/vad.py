@@ -15,7 +15,15 @@ def vad(base_dir):
 
   print(speech_timestamps)
 
-  output_json = base_dir/ 'output' / 'timestamps'/ "timestamps.json"
+
+
+  output = base_dir/ 'output' / 'timestamps'
+
+  output.mkdir(parents=True, exist_ok=True)
+
+  output_json = output / "timestamps.json"
+
+
 
   with open(output_json, "w", encoding="utf-8") as f:
           json.dump(speech_timestamps, f, indent=2, ensure_ascii=False)

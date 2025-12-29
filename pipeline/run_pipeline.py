@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
 
 
-# python -m pipeline.run_pipeline --url "https://www.youtube.com/shorts/fXQuHSmEa1U"
+# python -m pipeline.run_pipeline --url "url"
 
 
 

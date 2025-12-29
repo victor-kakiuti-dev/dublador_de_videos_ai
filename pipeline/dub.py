@@ -7,13 +7,10 @@ from dotenv import load_dotenv
 
 def dubbing(json_ts, out_dir):
     load_dotenv()
-    print('.')
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    print('.')
 
     client = OpenAI()
-    print('.')
     
 
     # =========================
@@ -21,25 +18,24 @@ def dubbing(json_ts, out_dir):
     # =========================
     with open(json_ts, encoding="utf-8") as f:
         segments = json.load(f)
-        print('.')
+
 
     # =========================
     # GERA TTS POR SEGMENTO
     # =========================
     for i, seg in enumerate(segments):
         text = seg.get("text", "").strip()
-        print('.')
 
         if not text:
             print(f"[{i:03d}] texto vazio — pulando")
             continue
-        print('.')
+
 
         out_audio = out_dir / f"{i:03d}.wav"
-        print('.')
+
 
         print(f"🎙️ Gerando TTS {out_audio.name}")
-        print('.')
+
 
         response = client.audio.speech.create(
             model="gpt-4o-mini-tts",
