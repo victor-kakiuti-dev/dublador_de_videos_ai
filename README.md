@@ -12,6 +12,21 @@ Este projeto é um **programa de dublagem de vídeos utilizando inteligência ar
 
 Para rodar o projeto corretamente, siga os passos abaixo.
 
+### 0. Clonar o repositório
+
+Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/victor-kakiuti-dev/dublador_de_videos_ai.git
+```
+
+Entre na pasta do projeto 
+
+```bash
+cd dublador_de_videos_ai
+```
+
+
 ### 1. Criar e ativar um ambiente virtual com Conda
 
 É recomendado usar um ambiente virtual para evitar conflitos de dependências.
