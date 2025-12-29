@@ -11,7 +11,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 VIDEO_DIR = BASE_DIR / "output" / 'video_input'
 AUDIO_DIR = BASE_DIR / 'output' / 'audio_input'
-output_json = BASE_DIR / 'output' / 'timestamps' / "timestamps.json"
+output_json = BASE_DIR / 'output' / 'timestamps' 
 audio_path = BASE_DIR / 'output' / 'audio_input'/'audio_original.wav'
 
 vad_path = BASE_DIR/'output'/'timestamps'/ 'timestamps.json'
