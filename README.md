@@ -1,6 +1,7 @@
 # Projeto de Dublagem de Vídeos com IA
 
 Este projeto é um **programa de dublagem de vídeos utilizando inteligência artificial**. Ele automatiza o processo de obtenção de vídeos, processamento de áudio e geração de dublagem, concentrando toda a lógica principal em um único ponto de execução.
+Pela complexidade do projeto e a falta de conteúdo online sobre o assunto fiz o uso de inteligência artificial para gerar alguns trechos de código, bem como para aprender mais sobre a área de dublagem de vídeos.
 
 ## Visão geral
 
@@ -57,6 +58,12 @@ Crie um arquivo .env na raiz no projeto e insira a chave api da OpenAi
 OPENAI_API_KEY= sua_chave_api_aqui
 ```
 
+### 4. Instalar downloader de vídeos
+Execute os seguintes comando no seu terminal
+```bash
+sudo apt update
+sudo apt install yt-dlp
+```
 
 ### 4. Executar o pipeline
 
