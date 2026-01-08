@@ -7,6 +7,7 @@ from .dub import dubbing
 from .final import end_pipeline
 from .chunks import cut_audio_by_timestamps
 from pathlib import Path
+import shutil
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 VIDEO_DIR = BASE_DIR / "output" / 'video_input'
@@ -18,13 +19,17 @@ vad_path = BASE_DIR/'output'/'timestamps'/ 'timestamps.json'
 chunks_dir = BASE_DIR/'output'/'chuncks'
 asr_output = BASE_DIR/'output'/ 'asr' / 'asr_timestamps.json'
 
-JSON_TS = BASE_DIR / "output" / "asr" / "asr_timestamps.json"
+JSON_TS = BASE_DIR / "output" / "asr" / "timestamps_final.json"
 OUT_DIR = BASE_DIR / "output" / "dub"
 
 VIDEO = BASE_DIR / "output" / "video_input" / "video.mp4"
 JSON_TS = BASE_DIR / "output" / "asr" / "asr_timestamps.json"
 AUDIO_DIR_CHUNK = BASE_DIR / "output" / "dub"
 OUT = BASE_DIR / "video_final.mp4"
+output = BASE_DIR/ 'output'
+
+def resetar_diretorio(diretorio: Path):
+    shutil.rmtree(diretorio)
 
 
 def main(url: str):
@@ -53,13 +58,15 @@ def main(url: str):
 
     asr_on(vad_path, chunks_dir, asr_output)
 
-    dubbing(JSON_TS, OUT_DIR)
+    dubbing(JSON_TS, OUT_DIR, output_json)
 
     end_pipeline(VIDEO, JSON_TS, AUDIO_DIR_CHUNK, OUT)
 
 
 
     print("Pipeline concluído")
+
+    resetar_diretorio(output)
 
 
 if __name__ == "__main__":
@@ -74,7 +81,7 @@ if __name__ == "__main__":
 
 
 
-# python -m pipeline.run_pipeline --url "url"
+# python -m pipeline.run_pipeline --url "https://www.youtube.com/watch?v=p7XRPGzL6kk"
 
 
 
