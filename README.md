@@ -30,7 +30,8 @@ cd dublador_de_videos_ai
 
 ### 1. Criar e ativar um ambiente virtual com Conda
 
-É recomendado usar um ambiente virtual para evitar conflitos de dependências.
+Recomendo que se use a versão 3.11 do python
+Use um ambiente virtual para evitar conflitos de dependências.
 
 Crie o ambiente:
 
@@ -67,15 +68,36 @@ sudo apt install yt-dlp
 
 ### 4. Executar o pipeline
 
-O projeto é executado via terminal, utilizando o módulo principal do pipeline.
-
-Para baixar um vídeo do YouTube e iniciar o processo de dublagem, execute:
+O projeto é executado via Flask. Para acessar a interface deve inserir no terminal o seguinte comando: 
 
 ```bash
-python -m pipeline.run_pipeline --url "url_do_video"
+python app.py
 ```
+Logo em seguida você deve inserir uma url de video no input. 
 
-Substitua `url_do_video` pela URL do vídeo desejado.
+Ainda não testei o limite do pipeline mas acredito que se o vídeo passar de 10 ou 15 minutos a IA pode começar a alucinar.
+
+ Recomendo que o vídeo seja de uma das seguintes plataformas e que não seja muito longo. 
+
+YouTube
+
+Vimeo
+
+Dailymotion
+
+Twitch (VODs e clips)
+
+TikTok
+
+Instagram
+
+Facebook
+
+Twitter / X
+
+Kwai
+
+Bilibili
 
 ---
 
