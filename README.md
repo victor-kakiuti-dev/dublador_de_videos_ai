@@ -6,8 +6,7 @@ Pela complexidade do projeto e a falta de conteúdo online sobre o assunto fiz o
 ## Visão geral
 
 * O projeto realiza **dublagem automática de vídeos** usando IA.
-* Atualmente **não possui interface gráfica**, mas **necessita de uma GUI no futuro** para facilitar o uso por usuários não técnicos.
-* Todo o fluxo do sistema é executado a partir do arquivo **`pipeline.py`**, que orquestra as etapas do processo.
+
 
 ## Execução do projeto
 
