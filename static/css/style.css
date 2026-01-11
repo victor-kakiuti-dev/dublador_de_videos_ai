@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eee;
+}
+
+.container {
+    width: 420px;
+    margin: 120px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn.download {
+    background: #4caf50;
+}
+
+.btn.download:hover {
+    background: #43a047;
+}
+
+.btn.back {
+    background: #607d8b;
+}
+
+.btn.back:hover {
+    background: #546e7a;
+}

@@ -63,7 +63,7 @@ Execute os seguintes comando no seu terminal
 ```bash
 sudo apt update
 sudo apt install yt-dlp
-```
+``
 
 ### 4. Executar o pipeline
 

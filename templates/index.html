@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>AI_Dubbing</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dublagem de Vídeo com IA</h1>
+
+        <form action="/process" method="post">
+            <input 
+                type="url" 
+                name="video_url" 
+                placeholder="Cole a URL do vídeo"
+                required
+            >
+            <button type="submit">Dublar vídeo</button>
+        </form>
+    </div>
+</body>
+</html>

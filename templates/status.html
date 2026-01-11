@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>AI_Dubbing</title>
+</head>
+<body>
+
+<div class="container">
+
+    {% if status == "processing" %}
+        <h1>⏳ Processando vídeo...</h1>
+        <p>Isso pode levar alguns minutos.</p>
+        <meta http-equiv="refresh" content="5">
+
+    {% elif status == "done" %}
+        <h1>✅ Vídeo pronto!</h1>
+        <a class="btn download"
+        href="{{ url_for('download', filename='video_final.mp4') }}">
+        ⬇ Download
+        </a>
+        <a class="btn back" href="{{ url_for('index') }}">
+            Voltar
+        </a>
+
+    {% elif status == "error" %}
+        <h1>❌ Erro no processamento</h1>
+        <a class="btn back" href="{{ url_for('index') }}">
+            Voltar
+        </a>
+
+    {% else %}
+        <h1>⚠️ Job desconhecido</h1>
+    {% endif %}
+
+</div>
+
+</body>

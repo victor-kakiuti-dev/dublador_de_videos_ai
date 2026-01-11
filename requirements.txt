@@ -5,3 +5,4 @@ pydub
 python-dotenv
 openai
 piper_tts
+flask

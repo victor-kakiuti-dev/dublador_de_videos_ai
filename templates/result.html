@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vídeo pronto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Seu vídeo está pronto!</h1>
+
+    <a class="btn download"
+       href="{{ url_for('download', filename=video_file) }}">
+        ⬇ Download do vídeo
+    </a>
+
+    <a class="btn back" href="{{ url_for('index') }}">
+        ← Dublar outro vídeo
+    </a>
+</div>
+
+</body>
+</html>
