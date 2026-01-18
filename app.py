@@ -5,6 +5,7 @@ from pathlib import Path
 import threading
 from threading import Thread
 import uuid
+import shutil
 
 jobs = {}
 
@@ -35,6 +36,10 @@ def run_pipeline_bg(job_id, video_url):
 @app.route("/")
 def index():
     video_path = BASE_DIR / FINAL_VIDEO_NAME
+    output_path = BASE_DIR/'output'
+
+    if output_path.exists():
+        shutil.rmtree(output_path)
 
     if video_path.exists():
         try:

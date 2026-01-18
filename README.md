@@ -58,14 +58,17 @@ Crie um arquivo .env na raiz no projeto e insira a chave api da OpenAi
 OPENAI_API_KEY= sua_chave_api_aqui
 ```
 
-### 4. Instalar downloader de vídeos
+### 4. Instalar downloader de vídeos e ffmpeg
 Execute os seguintes comando no seu terminal
 ```bash
 sudo apt update
+sudo apt upgrade
 sudo apt install yt-dlp
+sudo apt install ffmpeg
+
 ``
 
-### 4. Executar o pipeline
+### 5. Executar o pipeline
 
 O projeto é executado via Flask. Para acessar a interface deve inserir no terminal o seguinte comando: 
 
